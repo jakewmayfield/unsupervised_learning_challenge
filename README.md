@@ -15,13 +15,14 @@ Here are the steps I took to clean the data.
 * Standardize your dataset so that columns that contain larger values do not unduly influence the outcome.
 
 ## Dimensionality Reduction
+
 The first step in machine learning is to reduce the number of features to a manageable size. Creating dummy variables above dramatically increased the number of features. I performed dimensionality reduction with PCA that explains 90% of variance.  I further reduced the dataset dimensions with t-SNE and visually inspected the results.
+
 ---
 ### There are 4 indistinct clusters, with one obvious outlier. 
 
 ## Cluster Analysis with k-Means
-
-Another machine learning method is Kmeans.  I create an elbow plot to identify the best number of clusters. 
+>Another machine learning method is Kmeans.  I create an elbow plot to identify the best number of clusters. 
 ---
 ### The best value of 'k' is 4.
 
