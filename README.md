@@ -7,12 +7,12 @@ In this challenge, I use unsupervised machine learning on raw cryptocurrency dat
 ## Data Preparation	
 Here are the steps I took to clean the data.
 
-	* Read `crypto_data.csv` into Pandas. 
-	* Discard all cryptocurrencies that are not being traded and drop the `IsTrading` column from the dataframe.
-	* Remove all rows that have at least one null value.
-	* Filter for cryptocurrencies that have been mined.
-	* Convert the remaining features with text values, `Algorithm` and `ProofType`, into numerical data.
-	* Standardize your dataset so that columns that contain larger values do not unduly influence the outcome.
+* Read `crypto_data.csv` into Pandas. 
+* Discard all cryptocurrencies that are not being traded and drop the `IsTrading` column from the dataframe.
+* Remove all rows that have at least one null value.
+* Filter for cryptocurrencies that have been mined.
+* Convert the remaining features with text values, `Algorithm` and `ProofType`, into numerical data.
+* Standardize your dataset so that columns that contain larger values do not unduly influence the outcome.
 
 ## Dimensionality Reduction
 The first step in machine learning is to reduce the number of features to a manageable size. Creating dummy variables above dramatically increased the number of features. I performed dimensionality reduction with PCA that explains 90% of variance.  I further reduced the dataset dimensions with t-SNE and visually inspected the results.
